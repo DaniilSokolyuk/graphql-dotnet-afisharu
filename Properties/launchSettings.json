@@ -1,0 +1,13 @@
+﻿{
+  "profiles": {
+    "Run": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5000/",
+      "launchUrl": "http://localhost:5000/ui/playground",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
