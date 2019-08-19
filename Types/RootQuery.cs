@@ -20,8 +20,8 @@ namespace Afisha.Graphql.Types
 
                     var keys = Enumerable.Range(0, count).ToArray();
 
-                    var singleKey = await ctx.Fix().DataLoader<CustomStringLoader>().LoadAsync(keys.Last(), ctx.CancellationToken);
                     var multipleKeys = await ctx.Fix().DataLoader<CustomStringLoader>().LoadAsync(keys, ctx.CancellationToken);
+                    var singleKey = await ctx.Fix().DataLoader<CustomStringLoader>().LoadAsync(keys.Last(), ctx.CancellationToken);
 
                     return multipleKeys.Append(singleKey).ToArray();
                 });
@@ -37,8 +37,8 @@ namespace Afisha.Graphql.Types
 
                     var dataLoader = ctx.Fix().BatchDataLoader<int, string>("fetchLoaderTest", async list => list.ToDictionary(x => x, x => (x * 2).ToString()));
 
-                    var singleKey = await dataLoader.LoadAsync(keys.Last(), ctx.CancellationToken);
                     var multipleKeys = await dataLoader.LoadAsync(keys, ctx.CancellationToken);
+                    var singleKey = await dataLoader.LoadAsync(keys.Last(), ctx.CancellationToken);
 
                     return multipleKeys.Append(singleKey).ToArray();
                 });
