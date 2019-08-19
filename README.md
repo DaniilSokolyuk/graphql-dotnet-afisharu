@@ -20,7 +20,7 @@ query {
 ```
 [CustomStringLoader](https://github.com/DaniilSokolyuk/graphql-dotnet-afisharu/blob/master/DataLoaders/CustomStringLoader.cs#L12) is called only once
 
-[Adhoc batch data loader](https://github.com/DaniilSokolyuk/graphql-dotnet-afisharu/blob/master/DataLoaders/CustomStringLoader.cs#L12) is called only once
+[Adhoc batch data loader](https://github.com/DaniilSokolyuk/graphql-dotnet-afisharu/blob/master/Types/RootQuery.cs#L38) is called only once
 
 
 # [Field Middlewares](https://graphql-dotnet.github.io/docs/getting-started/field-middleware/)
