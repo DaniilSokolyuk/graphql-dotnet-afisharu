@@ -29,3 +29,5 @@ Usage example in ASP.NET Core
 [sample usage](https://github.com/DaniilSokolyuk/graphql-dotnet-afisharu/blob/master/Infrastructure/FieldMiddleware/GraphQlExecutorDecorator.cs#L31)
 
 #  Other
+* Scrutor auto registration
+* System.Text.Json serialization
